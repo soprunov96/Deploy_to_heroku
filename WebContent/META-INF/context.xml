@@ -15,10 +15,12 @@
     <!--    		connectionProperties="useUnicode=yes;characterEncoding=utf8;serverTimezone=UTC;"-->
     <!--    		url="jdbc:mysql://localhost:3306/mydb"/>-->
 
-    <Resource name="jdbc/mydb" auth="Container"
+    <Resource name="jdbc/d4rmrpf0d8kqm8" auth="Container"
               type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
-              url="jdbc:postgresql://localhost/mydb"
-              username="postgres" password="root" maxActive="20" maxIdle="10" maxWait="-1"/>
+              url="jdbc:postgresql://ec2-54-247-79-178.eu-west-1.compute.amazonaws.com/d4rmrpf0d8kqm8?sslmode=require"
+              username="krgqkpkfzzpnks"
+              password="07466cebf5b544dc757ca9dda802fa6e2c261f089682873d57ab894ac261b91d"
+              maxActive="20" maxIdle="10" maxWait="-1"/>
 
 
     <!--    Define DataSource at global level by defining them in the TOMCAT_HOME/conf/server.xml
