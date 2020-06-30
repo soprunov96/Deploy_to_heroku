@@ -67,7 +67,7 @@ public class ContextListener implements ServletContextListener {
 		log("Log4J initialization started");
 		try {
 			PropertyConfigurator.configure(
-				servletContext.getRealPath("/src/resources/log4j.properties"));
+				servletContext.getRealPath("/WebContent/WEB-INF/log4j.properties"));
 			LOG.debug("Log4j has been initialized");
 		} catch (Exception ex) {
 			log("Cannot configure Log4j");
