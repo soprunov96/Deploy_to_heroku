@@ -1,10 +1,10 @@
-<%@ include file="/WEB-INF/jspf/directive/page.jspf" %>
-<%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
+<%@ include file="/WebContent/WEB-INF/jspf/directive/page.jspf" %>
+<%@ include file="/WebContent/WEB-INF/jspf/directive/taglib.jspf" %>
 
 <html>
 
 <c:set var="title" value="start page"/>
-<%@ include file="/WEB-INF/jspf/head.jspf" %>
+<%@ include file="/WebContent/WEB-INF/jspf/head.jspf" %>
 
 <fmt:setLocale value="${param.locale}" scope="session"/>
 <body>
@@ -32,7 +32,7 @@ Just included it in this JSP document.
     <%-- HEADER --%>
 
     <c:if test="${not empty user}">
-        <%@ include file="/WEB-INF/jspf/header.jspf" %>
+        <%@ include file="/WebContent/WEB-INF/jspf/header.jspf" %>
     </c:if>
     <%-- HEADER --%>
 
