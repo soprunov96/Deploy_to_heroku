@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>customTag</short-name>
+
+    <uri>/WEB-INF/customtag</uri>
+    <tag>
+        <description>Tag that check login unique. One attribute are required: 'login'.</description>
+        <name>checkLogin</name>
+        <tag-class>ua.nure.soprunov.SummaryTask.CustomTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>check Login</description>
+            <name>login</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

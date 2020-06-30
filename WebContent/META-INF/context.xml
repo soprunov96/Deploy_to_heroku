@@ -1,0 +1,35 @@
+<!-- Change the lines below according your RDBMS and DB -->
+
+<Context>
+
+    <!--		Another way how to configure DataSouce with out server.xml -->
+
+    <!--    	    <Resource name="jdbc/MYDB"-->
+    <!--    		auth="Container"-->
+    <!--    		type="javax.sql.DataSource"-->
+    <!--    		maxTotal="100" maxIdle="30" maxWaitMillis="10000"-->
+    <!--    		username="root" password="root"-->
+    <!--    		driverClassName="com.mysql.cj.jdbc.Driver"-->
+    <!--    		defaultAutoCommit="false"-->
+    <!--    		defaultTransactionIsolation="READ_COMMITTED"-->
+    <!--    		connectionProperties="useUnicode=yes;characterEncoding=utf8;serverTimezone=UTC;"-->
+    <!--    		url="jdbc:mysql://localhost:3306/mydb"/>-->
+
+    <Resource name="jdbc/mydb" auth="Container"
+              type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+              url="jdbc:postgresql://localhost/mydb"
+              username="postgres" password="root" maxActive="20" maxIdle="10" maxWait="-1"/>
+
+
+    <!--    Define DataSource at global level by defining them in the TOMCAT_HOME/conf/server.xml
+     GlobalNamingResources element.If we use this approach, then we need to define a ResourceLink from context.xml file
+      of server or application specific.Also you should add Sql driver to Tomcat lib.
+    -->
+
+<!--    <ResourceLink name="jdbc/MYDB"-->
+<!--                  global="jdbc/MYDB"-->
+<!--                  auth="Container"-->
+<!--                  type="javax.sql.DataSource"-->
+<!--    />-->
+
+</Context>
