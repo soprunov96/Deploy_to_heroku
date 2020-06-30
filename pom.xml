@@ -136,8 +136,8 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.3</version>
         <configuration>
-          <warSourceDirectory>WebContent</warSourceDirectory>
-          <webXml>/WEB-INF/web.xml</webXml>
+<!--          <warSourceDirectory>WebContent</warSourceDirectory>-->
+          <webXml>WebContent/WEB-INF/web.xml</webXml>
         </configuration>
       </plugin>
 
