@@ -41,7 +41,7 @@ public abstract class DataSourceFactory {
                 try {
                     initContext = new InitialContext();
                     return (DataSource) initContext
-                            .lookup("java:/comp/env/jdbc/mydb");
+                            .lookup("java:/comp/env/jdbc/d4rmrpf0d8kqm8");
                 } catch (NamingException e) {
                     LOG.error("Cannot get JNDI DataSource", e);
                 }

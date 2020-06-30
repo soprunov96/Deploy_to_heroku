@@ -67,7 +67,7 @@ public class ContextListener implements ServletContextListener {
 		log("Log4J initialization started");
 		try {
 			PropertyConfigurator.configure(
-				servletContext.getRealPath("WEB-INF/log4j.properties"));
+				servletContext.getRealPath("WebContent/WEB-INF/log4j.properties"));
 			LOG.debug("Log4j has been initialized");
 		} catch (Exception ex) {
 			log("Cannot configure Log4j");
@@ -85,7 +85,7 @@ public class ContextListener implements ServletContextListener {
 		// initialize commands container
 		// just load class to JVM
 		try {
-			Class.forName("ua.nure.soprunov.SummaryTask.web.command.CommandContainer");
+			Class.forName("src.ua.nure.soprunov.SummaryTask.web.command.CommandContainer");
 		} catch (ClassNotFoundException ex) {
 			throw new IllegalStateException("Cannot initialize Command Container");
 		}
