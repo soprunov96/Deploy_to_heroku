@@ -129,6 +129,12 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.heroku</groupId>
+            <artifactId>webapp-runner-main</artifactId>
+            <version>8.5.51.0</version>
+        </dependency>
     </dependencies>
 
     <build>
